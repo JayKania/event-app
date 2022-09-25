@@ -3,6 +3,7 @@ import React from "react";
 import EventContent from "../../components/event-detail/event-content";
 import EventLogistics from "../../components/event-detail/event-logistics";
 import EventSummary from "../../components/event-detail/event-summary";
+import ErrorAlert from "../../components/ui/ErrorAlert";
 import { getEventById } from "../../dummy-data";
 
 const SingleEvent = () => {
@@ -15,7 +16,11 @@ const SingleEvent = () => {
   console.log(event);
 
   if (!event) {
-    return <p>No event found!</p>;
+    return (
+      <ErrorAlert>
+        <p>No event found!</p>
+      </ErrorAlert>
+    );
   }
 
   return (
