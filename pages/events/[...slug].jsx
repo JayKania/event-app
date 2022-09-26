@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import React from "react";
-import EventList from "../../components/events/EventList";
-import ResultsTitle from "../../components/events/ResultsTitle";
-import Button from "../../components/ui/Button";
-import ErrorAlert from "../../components/ui/ErrorAlert";
+import EventList from "../../components/events/event-list";
+import ResultsTitle from "../../components/events/results-title";
+import Button from "../../components/ui/button";
+import ErrorAlert from "../../components/ui/error-alert";
 import { getFilteredEvents } from "../../dummy-data";
 
 const FilteredEvents = () => {

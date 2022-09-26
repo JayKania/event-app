@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Button from "../ui/Button";
+import Button from "../ui/button";
 import DateIcon from "../icons/date-icon";
 import AddressIcon from "../icons/address-icon";
 import RightArrowIcon from "../icons/arrow-right-icon";
